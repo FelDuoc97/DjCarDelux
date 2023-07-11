@@ -1,0 +1,267 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Accesorios </title>
+
+  <!-- Css Styles -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/style2.css' %}" />
+
+</head>
+
+<body>
+  <!-- HEADER COMIENZO -->
+  <header class="header">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+          <!-- LINK PÁGINA INICIO EN LOGO -->
+          <div class="header__logo">
+            <a href="./index.html"><img src="img/Logo.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col-lg-10">
+          <div class="header__menu__option">
+            <!-- LINKS PÁGINAS -->
+            <nav class="header__menu">
+              <ul>
+                <li class="active"><a href="./index.html">Inicio</a></li>
+                <li><a href="./Herramientas.html">Herramientas</a></li>
+                <li><a href="./Accesorios.html">Accesorios</a></li>
+                <li><a href="./registro.html">Registro</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown"><b>Ingresar</b></a>
+                  <ul id="login-dp" class="dropdown-menu">
+                    <li>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <form class="form" role="form" method="post" action="login" accept-charset="UTF-8"
+                            id="login-nav">
+                            <div class="form-group">
+                              <!-- <label class="sr-only" for="exampleInputEmail2">Ingresa tu email</label> -->
+                              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email"
+                                required>
+                            </div>
+                            <div class="form-group">
+                              <!-- <label class="sr-only" for="exampleInputPassword2">Ingresa tu contraseña</label> -->
+                              <input type="password" class="form-control" id="exampleInputPassword2"
+                                placeholder="Contraseña" required>
+                              <div class="help-block text-right"><a href="">Olvidaste tu
+                                  contraseña ?</a></div>
+                            </div>
+                            <div class="form-group">
+                              <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"> Mantener sesión iniciada
+                              </label>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- MENU RESPONSIVO BTN -->
+      <div class="menu_responsivo">
+
+        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="./Herraminetas.html">Crear receta</a>
+          <a class="dropdown-item" href="./registro.html">Registro</a>
+          <a class="dropdown-item" href="./contacto.html">Contacto</a>
+          <a class="dropdown-item" data-toggle="dropdown"><b>Ingresar</b></a>
+          <ul id="login-dp" class="dropdown-menu">
+            <li>
+              <div class="row">
+                <div class="col-md-12">
+                  <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                    <div class="form-group">
+                      <!-- <label class="sr-only" for="exampleInputEmail2">Ingresa tu email</label> -->
+                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                      <!-- <label class="sr-only" for="exampleInputPassword2">Ingresa tu contraseña</label> -->
+                      <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contraseña"
+                        required>
+                      <div class="help-block text-right"><a href="">Olvidaste tu
+                          contraseña ?</a></div>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Mantener sesión iniciada
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </li>
+          </ul>
+          </li>
+
+        </div>
+      </div>
+      <!-- FIN MENU RESPONSIVE -->
+    </div>
+  </header>
+  <!-- FIN HEADER -->
+
+  <section class="contenedor">
+    <!-- Contenedor de elementos -->
+    <div class="contenedor-items">
+      <div class="item">
+        <span class="titulo-item">Aleron Mercedes</span>
+        <img src="{% static 'images/aleron.jpg' %}" alt="Aleron">
+        <span class="precio-item">$100.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Tubo Tunnig</span>
+        <img src="{% static 'images/Tubo de escape tuunig.jpg' %}" alt="Tubo de escape tuning">
+        <span class="precio-item">$96.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Sistema de escape</span>
+        <img src="{% static 'images/sistema-de-escapa.png' %}" alt="Sistema de escape">
+        <span class="precio-item">$355.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Ring Tuning</span>
+        <img src="img/llanta.jpg" alt="100px" class="img-item">
+        <span class="precio-item">$300.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Luces para Tablero</span>
+        <img src="{% static 'images/luces para tablero.jpg' %}" alt="Luces para tablero">
+        <span class="precio-item">$12.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Rollos wrap para Tunnig</span>
+        <img src="{% static 'images/wrap para autos.png' %}" alt="Wrap para autos">
+        <span class="precio-item">$188.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Luces Rgb</span>
+        <img src="{% static 'images/luces rgb.jpg' %}" alt="Luces RGB">
+        <span class="precio-item">$34.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Holograma Audi</span>
+        <img src="{% static 'images/Logoaudi.jpg' %}" alt="Logo Audi">
+        <span class="precio-item">$32.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Body Kit</span>
+        <img src="{% static 'images/body-kit-bmw.png' %}" alt="Body kit BMW">
+        <span class="precio-item">$400.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+    </div>
+    <!-- Carrito de Compras -->
+    <div class="carrito" id="carrito">
+      <div class="header-carrito">
+        <h2>Tu Carrito</h2>
+
+      </div>
+
+
+      <div class="carrito-items"></div>
+
+      <div class="carrito-total">
+        <div class="fila">
+          <strong>Tu Total</strong>
+          <span class="carrito-precio-total">
+          </span>
+        </div>
+        <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container">
+        <div class="row">
+            <!-- REDES -->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="footer__address">
+                    <h5>Síguenos</h5>
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i> Santiago, RM, Chile.</li>
+                        <li><i class="fa fa-instagram"></i>@CarDeluxChile</li>
+                        <li><i class="fa fa-twitter"></i>@CarDeluxChile</li>
+                        <li><i class="fa fa-envelope"></i>cardeluxchile@gmail.com</li>
+                        <li><i class="fa fa-whatsapp"></i> +56968301359</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- COPYRIGHT -->
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="footer__copyright__text">
+                        <p>Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> Felipe Alavardo <i class="fa fa-car" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+                <!-- TERMINOS DE USO -->
+                <div class="col-lg-5">
+                    <ul>
+                        <li>Todos los derechos reservados</li>
+                        <li>Politicas de privacidad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FINAL DE FOOTER -->
+</body>
+<script src="{% static 'js/app.js' %}"></script>
+
+</html>
+
+{ end block}
